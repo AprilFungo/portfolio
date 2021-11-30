@@ -2,3 +2,30 @@
     margin: 0;
     padding: 0;
 }
+
+body{
+     background-color: indianred;
+}
+.container{
+    margin-top: 50px;
+}
+nav{
+background-color: rgb(191, 218, 240);
+}
+#dp{
+   width: 70%;
+   border-radius: 50%;
+   border-color: transparent;
+   border-style: outset;
+
+}
+ion-icon {
+  font-size: 35px;
+  color: white;
+}
+a{
+  text-decoration: none;
+}
+.card{
+  background-color: rgba(22, 122, 189, 0.233);
+}
