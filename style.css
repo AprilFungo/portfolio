@@ -6,8 +6,13 @@
 body{
      background-color: indianred;
 }
-.container{
-    margin-top: 50px;
+#maincard{
+ background-color: pink;
+width: 100%;
+
+}
+#main{
+    margin-top: 100px;
 }
 nav{
 background-color: rgb(191, 218, 240);
@@ -21,11 +26,11 @@ background-color: rgb(191, 218, 240);
 }
 ion-icon {
   font-size: 35px;
-  color: white;
+  color: rgb(202, 19, 19);
 }
 a{
   text-decoration: none;
 }
-.card{
-  background-color: rgba(22, 122, 189, 0.233);
+.btn-group{
+  padding-top: -50px;
 }
