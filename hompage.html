@@ -18,7 +18,7 @@
 <!-- navbar -->
 <nav class="navbar navbar-expand-lg navbar-light fixed-top">
     <div class="container-fluid">
-    <h1 class="display-6">i'manIT</h1>
+    <h1 id="navbrand" class="display-6 navbar-brand">fungo</h1>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -26,16 +26,16 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    <a id="navlink" class="nav-link active" aria-current="page" href="#">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#scrollspyHeading1">About</a>
+                    <a id="navlink" class="nav-link" href="#scrollspyHeading1">About</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Projects</a>
+                    <a id="navlink" class="nav-link" href="#">Projects</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Contact</a>
+                    <a id="navlink" class="nav-link" href="#">Contact</a>
                 </li>
             </ul>
         </div>
@@ -51,7 +51,7 @@
                 <div class="card-body">
                     
 <!-- profile -->
-<div class="card ">
+<div id="homecard" class="card ">
     <div class="card-body py-4">
         <div class="container">
             <div class="row ">
@@ -67,8 +67,12 @@
                                 <h1 class="display-6"><b>APRIL GACOSTA FUNGO</b></h1>
                                 <p>Bachelor of Science in Information Technology</p>
                                 <p>Sorsogon State University Bulan-Campus</p>
-                                <p>" We've all been held captive by our thoughts, which hinder us from achieving our goals. Remember that hardship is only in
-                                our minds; we have goals to achieve. "</p>
+                                <blockquote class="blockquote mb-0">
+                                    <p>" We've all been held captive by our thoughts, which hinder us from achieving our goals. Remember that hardship is only
+                                    in
+                                    our minds; we have dreams to fulfill. "</p>
+                                    <footer class="blockquote-footer">April Fungo<cite title="Source Title"></cite></footer>
+                                </blockquote>
 
                                 <div>
                                     <div class="btn-group mt-3">
@@ -88,7 +92,7 @@
 <!-- profile -->
 
 <!-- cv card -->
-<div class="card mt-5">
+<div id="cv-card" class="card mt-5 py-4">
     <div class="card-body">
         <div class="container-fluid">
             <div class="row">
@@ -96,17 +100,17 @@
                 <!-- col1 -->
                 <div class="col-md-6">
                     <!-- dpcard -->
-                    <div class="card mb-3" style="max-width: 540px;">
+                    <div id="cvdp-card" class="card mb-3" style="max-width: 540px;">
                         <div class="row g-0">
                             <div class="col-md-4">
-                                <img src="./img/april.jpg" class="img-fluid rounded-start" alt="...">
+                                <img src="./img/dp.jpg" class="img-fluid rounded-start" alt="...">
                             </div>
                             <div class="col-md-8">
                                 <div class="card-body">
-                                   <p>NAME: April G. Fungo</p>
-                                <p>PROFILE: IT Sudent</p>
-                                <p>EMAIL: fungoaprilgacosta02@gmail.com</p>
-                                <p>PHONE: 095035883559</p>
+                                <p id="data">NAME: April G. Fungo</p>
+                                <p id="data">PROFILE: IT Sudent</p>
+                                <p id="data">EMAIL: fungoaprilgacosta02@gmail.com</p>
+                                <p id="data">PHONE: 095035883559</p>
                                 </div>
                             </div>
                 </div>
@@ -147,9 +151,9 @@
                 <!-- col2 -->
                 <div class="col-md-6">
                     <div class="card">
-                        <div class="card-body">
+                        <div id="personal-card" class="card-body">
                             <!-- personal -->
-                            <div class="card">
+                            <div class="card my-2">
                                 <div class="card-body">
                                     <p class="text-center">Personal Particulars</p>
                                     <p>Address:             Sitio Pilit, Barangay Salvacion, Sta. Magdalena, Sorsogon</p>
@@ -192,12 +196,16 @@
             <div class="row text-center">
                 <div class="col-md-3">
                     <div class="card" >
-                        <img src="..." class="card-img-top" alt="...">
+                        <img src="./img/sticky-note-solid-removebg-preview.png" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                                content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                            <h5 class="card-title">NOTES APP</h5>
+                            <p class="card-text">Node
+                                js Couse Activity
+                            </p>
+                            <div class="btn-group">
+                                <a href="#" class="btn btn-primary disabled" aria-current="page">open project</a>
+                                <a href="https://github.com/AprilFungo/node.jsActivity.git" class="btn btn-primary"><i class="fab fa-github"></i></a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -205,10 +213,13 @@
                 <div class="card">
                     <img src="..." class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                            content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <h5 class="card-title">WEATHER-APP</h5>
+                        <p class="card-textSome ">NodeJs Course Midterm Project</p>
+                        <div class="btn-group">
+                            <a href="#" class="btn btn-primary disabled" aria-current="page">open project</a>
+                            <a href="https://github.com/AprilFungo/Weather-App.git" class="btn btn-primary" target="_blank"><i class="fab fa-github" ></i></a>
+                            <a href="https://weatherly-web-application.herokuapp.com/" class="btn btn-primary" target="_blank"><i class="fab fa-edge"></i></a>
+                        </div>
                     </div>
                 </div>
                 </div>
@@ -230,7 +241,7 @@
                         <h5 class="card-title">Card title</h5>
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
                             content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <a href="#" class="btn btn-primary"></a>
                     </div>
                 </div>
                 </div>
@@ -249,21 +260,22 @@
     </div>
 </div>
 
-<footer class="text-center pb-4">
-    <p>Let's get in touch!</p>
+<footer class="text-center pb-4 pt-3">
+    <p id="footer-text">Let's get in touch!</p>
     <div>
-        <a href="https://www.facebook.com/AphrilisAperire" target="_blank">
+        <a id="contact" href="https://www.facebook.com/AphrilisAperire" target="_blank">
             <ion-icon name="logo-facebook"></ion-icon>
         </a>
-        <a href="" target="_blank">
+        <a id="contact" href="" target="_blank">
             <ion-icon name="logo-twitter"></ion-icon>
         </a>
-        <a href="" target="_blank">
+        <a id="contact" href="" target="_blank">
             <ion-icon name="logo-instagram"></ion-icon>
         </a>
-        <a href="" target="_blank">
+        <a id="contact" href="" target="_blank">
             <ion-icon name="paper-plane"></ion-icon>
         </a>
+        <a id="contact" href=""><ion-icon name="mail"></ion-icon></a>
     </div>
 </footer>
 <!-- main -->

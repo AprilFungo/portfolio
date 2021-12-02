@@ -3,11 +3,20 @@
   padding: 0;
 }
 body{
-  background-color: #ffa69e
+  background-color: #ffa69e;
 }
+/* navbar */
 nav{
-background-color: black ;
+background-color:  black;
 }
+#navbrand{
+  color: white;
+  font-size: larger;
+}
+#navlink{
+  color: white;
+}
+
 #dp{
   border-radius: 50%;
 }
@@ -16,4 +25,37 @@ background-color: black ;
 #main{
   margin-top: 100px;
 }
+#homecard{
+  background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,.7)),url(./img/background.jpg);
+}
+#cv-card{
+  border-style: outset;
+  border-color: wheat;
+}
+#cvdp-card{
+  background-color: black;
+  border-width: 5px;
+}
+#personal-card{
+  background-color: black;
+}
 /* cards */
+
+/* footer */
+footer{
+  background-color: black;
+}
+#footer-text{
+  color: white;
+}
+#contact{
+  text-decoration: none;
+  color: #ffa69e;
+}
+ion-icon {
+  font-size: 40px;
+  margin-right: 2%;
+}
+#data{
+  color: white;
+}
