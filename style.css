@@ -16,7 +16,18 @@ background-color:  black;
 #navlink{
   color: white;
 }
-
+#navlink::after{
+  content: '';
+  width: 0%;
+height: 2px;
+background: #ffa69e;
+display: block;
+margin: auto;
+transition: 0.5s;
+}
+#navlink:hover::after{
+  width: 100%;
+}
 #dp{
   border-radius: 50%;
 }
@@ -29,20 +40,28 @@ background-color:  black;
   background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,.7)),url(./img/background.jpg);
 }
 #cv-card{
-  border-style: outset;
-  border-color: wheat;
+  border-style: solid;
+  border-color: rgb(228, 224, 217);
+  border-radius: 20px;
+  border-width: 3px;
+  background-color: #ffa69e;
 }
 #cvdp-card{
   background-color: black;
   border-width: 5px;
+  
 }
 #personal-card{
   background-color: black;
 }
+#work{
+  background-image: linear-gradient(rgba(4,9,30,0.7),rgba(29, 30, 32, 0.452)),url(./img/pink.jpg);
+  background-repeat: no-repeat;
+}
 /* cards */
 
 /* footer */
-footer{
+#contact{
   background-color: black;
 }
 #footer-text{
@@ -57,5 +76,13 @@ ion-icon {
   margin-right: 2%;
 }
 #data{
+  color: white;
+}
+.card-header{
+  background-color: rgba(0, 0, 0, 0.274);
+  color: white;
+}
+.blockquote-footer{
+  background-color: rgba(24, 17, 17, 0.63);
   color: white;
 }
