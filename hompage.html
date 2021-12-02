@@ -17,7 +17,7 @@
 <!-- navbar -->
 <nav class="navbar navbar-expand-lg navbar-light fixed-top">
     <div class="container-fluid">
-    <h1 id="navbrand" class="display-6 navbar-brand">fungo</h1>
+    <h1 id="navbrand" class="display-6 navbar-brand"></h1>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -78,7 +78,7 @@
                                 <div>
                                     <div class="btn-group mt-3">
                                         <a href="#" class="btn btn-primary disabled" aria-disabled="true">CV Download</a>
-                                        <a href="#" class="btn btn-secondary"><i class="fa fa-download" aria-hidden="true"></i></ion-icon></a>
+                                        <a id="download" href="#" class="btn btn-secondary" onclick="downloadpdf()"><i class="fa fa-download" aria-hidden="true"></i></ion-icon></a>
                                     </div>
                                 </div>
 
@@ -96,8 +96,10 @@
 <div id="cv-card" class="card mt-5 py-4">
     <div class="card-body">
         <div class="container-fluid">
+            <div id="cvheader" class="row text-center pt-3 mb-5">
+<p>CURRICULUM VITAE</p>
+            </div>
             <div class="row">
-
                 <!-- col1 -->
                 <div class="col-md-6">
                     <!-- dpcard -->
@@ -151,8 +153,8 @@
                
                 <!-- col2 -->
                 <div class="col-md-6">
-                    <div class="card">
-                        <div id="personal-card" class="card-body">
+                    <div id="personal-card" class="card">
+                        <div  class="card-body">
                             <!-- personal -->
                             <div class="card my-2">
                                 <div class="card-body">
@@ -171,7 +173,7 @@
                                 <div class="card-body">
                                     <p class="text-center"><b>Educational Background</b></p>
                                     <p class="text-center">Bachelor's Degree/College Degree</p>
-                                    <p><b>Field of Study:</b> Informmation Technology</p>
+                                    <p><b>Field of Study:</b> Informmation Communication Technology</p>
                                     <p><b>Major:</b> Bachelor of Science in Information Technology</p>
                                     <p><b>Institute/University:</b> Sorsogon State University - Philippines</p>
                                 </div>
@@ -206,7 +208,7 @@
                             </p>
                             <div class="btn-group">
                                 <a href="#" class="btn btn-primary disabled" aria-current="page">open project</a>
-                                <a href="https://github.com/AprilFungo/node.jsActivity.git" class="btn btn-primary"><i class="fab fa-github"></i></a>
+                                <a href="https://github.com/AprilFungo/node.jsActivity.git" class="btn btn-primary" target="_blank"><i class="fab fa-github"></i></a>
                             </div>
                         </div>
                     </div>
@@ -276,27 +278,39 @@
     </div>
 </div>
 
-<footer id="contact" class="text-center pb-4 pt-3">
+<footer id="contact" class="text-center pb-3 pt-4">
     <p id="footer-text">Let's get in touch!</p>
     <div>
         <a id="contact" href="https://www.facebook.com/AphrilisAperire" target="_blank">
             <ion-icon name="logo-facebook"></ion-icon>
         </a>
-        <a id="contact" href="" target="_blank">
+        <a id="contact" href="https://twitter.com/FungoApril" target="_blank">
             <ion-icon name="logo-twitter"></ion-icon>
         </a>
-        <a id="contact" href="" target="_blank">
+        <a id="contact" href="https://www.instagram.com/aphrilis_aperire/" target="_blank">
             <ion-icon name="logo-instagram"></ion-icon>
         </a>
-        <a id="contact" href="" target="_blank">
-            <ion-icon name="paper-plane"></ion-icon>
-        </a>
-        <a id="contact" href=""><ion-icon name="mail"></ion-icon></a>
+        <a id="contact" href="mailto:fungoaprilgacosta02@gmail.com"><ion-icon name="mail"></ion-icon></a>
+    </div>
+    <div>
+        <p>contact no. 09503583559</p>
     </div>
 </footer>
 
 </div>
 <!-- main -->
+
+<script>
+    function downloadpdf(){
+        var element = document.getElementById("cv-card")
+        html2pdf().from(element).save()
+    }
+</script>
+
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"
+            integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
 <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
