@@ -1,36 +1,19 @@
 *{
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
-
 body{
-     background-color: indianred;
-}
-#maincard{
- background-color: pink;
-width: 100%;
-
-}
-#main{
-    margin-top: 100px;
+  background-color: #ffa69e
 }
 nav{
-background-color: rgb(191, 218, 240);
+background-color: black ;
 }
 #dp{
-   width: 70%;
-   border-radius: 50%;
-   border-color: transparent;
-   border-style: outset;
+  border-radius: 50%;
+}
 
+/* cards */
+#main{
+  margin-top: 100px;
 }
-ion-icon {
-  font-size: 35px;
-  color: rgb(202, 19, 19);
-}
-a{
-  text-decoration: none;
-}
-.btn-group{
-  padding-top: -50px;
-}
+/* cards */
