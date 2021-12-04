@@ -59,6 +59,10 @@ transition: 0.5s;
   background-image: linear-gradient(rgba(4,9,30,0.7),rgba(29, 30, 32, 0.452)),url(./img/pink.jpg);
   background-repeat: no-repeat;
 }
+#project-inner__card{
+  background-color: transparent;
+  border-color: transparent;
+}
 /* cards */
 
 /* footer */
@@ -89,4 +93,7 @@ ion-icon {
 #cvheader{
   background-color: black;
   color: white;
+}
+button{
+  box-shadow: none;
 }
