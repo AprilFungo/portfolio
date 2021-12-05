@@ -10,8 +10,9 @@ nav{
 background-color:  black;
 }
 #navbrand{
-  color: white;
-  font-size: larger;
+  color: #8a2162;
+  font-size: 18pt;
+  font-family: Brush Script MT;
 }
 #navlink{
   color: white;
@@ -94,6 +95,15 @@ ion-icon {
   background-color: black;
   color: white;
 }
-button{
+#download{
+box-shadow: none;
+}
+#github{
   box-shadow: none;
+}
+#browse{
+  box-shadow: none;
+}
+.navbar-toggler{
+  background-color: #ffa69e8e;
 }
