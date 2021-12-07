@@ -4,20 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Portfolio</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
             integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="styles.css">
 </head>
 <body>
- 
-<!-- main -->
+    
 <!-- navbar -->
 <nav class="navbar navbar-expand-lg navbar-light fixed-top">
     <div class="container-fluid">
-    <h1 id="navbrand" class="display-6 navbar-brand">April Fungo</h1>
+        <h1 id="navbrand" class="display-6 navbar-brand">April Fungo</h1>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -40,64 +39,53 @@
         </div>
     </div>
 </nav>
-<!-- navbar -->
+<!-- nav end -->
 
+<div id="main__container" class="container-fluid">
+    <div data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="0" tabindex="0">
 
-<div id="main" class="container-fluid">
-    <div class="row">
-        <div class="col">
+<!-- home -->
+    <div  id="home" class="row">
+        
+        <div class="col text-center">
+          
+            <div class="img my-4">
+                <img id="dp" src="./img/april.jpg" alt="">
+            </div>
 
-            <div data-bs-spy="scroll" data-bs-target="#navbar-example3" data-bs-offset="0" tabindex="0"></div>
+        </div>
 
-            <div id="home" class="card mb-5">
-               <div class="card-body">
+    </div>
 
-<!-- profile -->
-<div id="homecard" class="card ">
-    <div class="card-body py-4">
-        <div class="container">
-            <div class="row ">
-                    <!-- col1 -->
-                    <div class="col-md-6 col-sm-12 py-5  text-center">
-                               
-                                            <img id="dp" src="./img/april.jpg" alt="">
-                    </div>
-                    <!-- col2 -->
-                    <div class="col-md-6 col-sm-12 py-5 text-center">
-                        <div class="card">
-                            <div class="card-body">
-                                <h1 class="display-6"><b>APRIL GACOSTA FUNGO</b></h1>
-                                <p>Bachelor of Science in Information Technology <br> Sorsogon State University Bulan-Campus</p>
-                                <blockquote class="blockquote mb-0">
-                                    <p>" We've all been held captive by our thoughts, which hinder us from achieving our goals. Remember that hardship is only
-                                    in
-                                    our minds; we have dreams to fulfill. "</p>
-                                    <footer class="blockquote-footer mt-1">April Fungo<cite title="Source Title"></cite></footer>
-                                </blockquote>
+    <div id="identity" class="row text-center">
 
-                                <div>
-                                    <div class="btn-group mt-3">
-                                        <a href="#" class="btn btn-primary disabled" aria-disabled="true">CV Download</a>
-                                        <a id="download" href="#" class="btn btn-secondary" onclick="downloadpdf()"><i class="fa fa-download" aria-hidden="true"></i></ion-icon></a>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                    <!-- end -->
+        <div class="col mt-3">
+            <p class="display-6"> <b>APRIL GACOSTA FUNGO</b></p>
+                <p><i>" We've all been held captive by our thoughts, which hinder us from achieving our goals. Remember that hardship
+                is only
+                in
+                our minds; we have dreams to fulfill. "</i></p>
+                <footer class="blockquote-footer">April Fungo<cite title="Source Title"></cite></footer>
+            </blockquote>
+            
+            <div>
+                <div class="btn-group mb-5">
+                    <a href="#" class="btn btn-primary disabled" aria-disabled="true">CV Download</a>
+                    <a id="download" href="#" class="btn btn-secondary" onclick="downloadpdf()"><i class="fa fa-download"
+                            aria-hidden="true"></i></ion-icon></a>
                 </div>
             </div>
+        </div>
+
     </div>
-</div>
-<!-- profile -->
+<!-- home -->
 
 <!-- cv card -->
-<div id="cv-card" class="card mt-5 py-4">
+<div id="cv-card" class="card my-5 py-4">
     <div class="card-body">
         <div class="container-fluid">
             <div id="cvheader" class="row text-center pt-3 mb-5">
-<p>CURRICULUM VITAE</p>
+                <p>ABOUT ME</p>
             </div>
             <div class="row">
                 <!-- col1 -->
@@ -106,63 +94,63 @@
                     <div id="cvdp-card" class="card mb-3" style="max-width: 540px;">
                         <div class="row g-0">
                             <div class="col-md-4">
-                                <img src="./img/dp.jpg" class="img-fluid rounded-start" alt="...">
+                                <img src="./img/dp.jpg" class="img-fluid rounded-start img-thumbnail" alt="...">
                             </div>
                             <div class="col-md-8">
                                 <div class="card-body">
-                                <p id="data">NAME: April G. Fungo</p>
-                                <p id="data">PROFILE: IT Student</p>
-                                <p id="data">EMAIL: fungoaprilgacosta02@gmail.com</p>
-                                <p id="data">PHONE: 09503583559</p>
+                                    <p id="data">NAME: April G. Fungo</p>
+                                    <p id="data">PROFILE: IT Student</p>
+                                    <p id="data">EMAIL: fungoaprilgacosta02@gmail.com</p>
+                                    <p id="data">PHONE: 09503583559</p>
                                 </div>
                             </div>
-                </div>
-                </div>
-                                <!--dpcard end -->
+                        </div>
+                    </div>
+                    <!--dpcard end -->
 
-                                <!-- progress -->
-                                <p class=" mt-5 text-center "><b>SKILLS</b></p>
-                                <div>HTML</div>
-                                <div class="progress mb-2">
-                                    <div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="25" aria-valuemin="0"
-                                        aria-valuemax="100">85%</div>
-                                </div>
-                                <div>CSS</div>
-                                <div class="progress mb-2">
-                                    <div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="25" aria-valuemin="0"
-                                        aria-valuemax="100">85%</div>
-                                </div>
-                                <div>JAVASCRIPT</div>
-                                <div class="progress mb-2">
-                                    <div class="progress-bar" role="progressbar" style="width: 50%;" aria-valuenow="25" aria-valuemin="0"
-                                        aria-valuemax="100">50%</div>
-                                </div>
-                                <div>PHP</div>
-                                <div class="progress mb-2">
-                                    <div class="progress-bar" role="progressbar" style="width: 50%;" aria-valuenow="25" aria-valuemin="0"
-                                        aria-valuemax="100">50%</div>
-                                </div>
-                                    <div>BOOTSTRAP</div>
-                                <div class="progress mb-5">
-                                    <div class="progress-bar" role="progressbar" style="width: 75%;" aria-valuenow="25" aria-valuemin="0"
-                                        aria-valuemax="100">75%</div>
-                                </div>
-                                <!-- progress end -->
+                    <!-- progress -->
+                    <p class=" mt-5 text-center "><b>SKILLS</b></p>
+                    <div>HTML</div>
+                    <div class="progress mb-2">
+                        <div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="25"
+                            aria-valuemin="0" aria-valuemax="100">85%</div>
+                    </div>
+                    <div>CSS</div>
+                    <div class="progress mb-2">
+                        <div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="25"
+                            aria-valuemin="0" aria-valuemax="100">85%</div>
+                    </div>
+                    <div>JAVASCRIPT</div>
+                    <div class="progress mb-2">
+                        <div class="progress-bar" role="progressbar" style="width: 50%;" aria-valuenow="25"
+                            aria-valuemin="0" aria-valuemax="100">50%</div>
+                    </div>
+                    <div>PHP</div>
+                    <div class="progress mb-2">
+                        <div class="progress-bar" role="progressbar" style="width: 50%;" aria-valuenow="25"
+                            aria-valuemin="0" aria-valuemax="100">50%</div>
+                    </div>
+                    <div>BOOTSTRAP</div>
+                    <div class="progress mb-5">
+                        <div class="progress-bar" role="progressbar" style="width: 75%;" aria-valuenow="25"
+                            aria-valuemin="0" aria-valuemax="100">75%</div>
+                    </div>
+                    <!-- progress end -->
                 </div>
                 <!-- col1 end -->
-               
+
                 <!-- col2 -->
                 <div class="col-md-6">
                     <div id="personal-card" class="card">
-                        <div  class="card-body">
+                        <div class="card-body">
                             <!-- personal -->
                             <div class="card my-2">
                                 <div class="card-body">
                                     <p class="text-center"><b>Personal Particulars</b></p>
-                                    <p> <b>Address:</b>            Sitio Pilit, Barangay Salvacion, Sta. Magdalena, Sorsogon</p>
-                                    <p> <b>Date of Birth:</b>      April 12, 2000</p>
-                                    <p><b>Geneder:</b>             Female</p>
-                                    <p> <b>Marital Status:</b>     Single</p>
+                                    <p> <b>Address:</b> Sitio Pilit, Barangay Salvacion, Sta. Magdalena, Sorsogon</p>
+                                    <p> <b>Date of Birth:</b> April 12, 2000</p>
+                                    <p><b>Geneder:</b> Female</p>
+                                    <p> <b>Marital Status:</b> Single</p>
                                     <p><b>Permanent Residency:</b> Philippines</p>
                                 </div>
                             </div>
@@ -191,92 +179,111 @@
 <!-- cv card -->
 
 <!-- works card -->
+<div id="work" class="row mt-5">
 
-<div id="work" class="card mt-5">
-    <div class="card-header text-center">MY WORKS</div>
-    <div class="card-body py-5">
-        
-        <div class="container">
-            <div class="row">
-               <div class="col">
-                
-                <div id="project-inner__card" class="card">
-                    <div class="card-body">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-md-4">
-                                    <div class="card mb-3">
-                                        <div class="card-body text-center">
-                                            <div>
-                                                <h5>NOTES APP</h5>
-                                                <ion-icon name="bookmarks"></ion-icon>
-                                            </div>
-                                            <div class="btn-group">
-                                                <a href="#" class="btn btn-primary disabled" aria-current="page">open project</a>
-                                                <a id="github" href="https://github.com/AprilFungo/node.jsActivity.git" class="btn btn-primary" target="_blank"><i
-                                                        class="fab fa-github"></i></a>
-                                                <a href="#" class="btn btn-primary disabled" target="_blank"><i class="fab fa-edge"></i></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="card mb-3">
-                                        <div class="card-body text-center">
-                                            <div>
-                                                <h5>WEATHER APP</h5>
-                                                <ion-icon name="cloudy-night"></ion-icon>
-                                            </div>
-                                            <div class="btn-group">
-                                                <a href="#" class="btn btn-primary disabled" aria-current="page">open project</a>
-                                                <a id="github" href="https://github.com/AprilFungo/Weather-App.git" class="btn btn-primary" target="_blank"><i
-                                                        class="fab fa-github"></i></a>
-                                                <a id="browse" href="https://weatherly-web-application.herokuapp.com/" class="btn btn-primary" target="_blank"><i
-                                                        class="fab fa-edge"></i></a>
-                                            </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2">
+                <!-- blank -->
+            </div>
+            <div class="col-md-8">
 
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="card text-center mb-3">
-                                        <div class="card-body">
-                                <div>
-                                    <h5>CHAT APP</h5>
-                                    <ion-icon name="chatbubbles"></ion-icon>
-                                </div>
-                                <div class="btn-group">
-                                    <a href="#" class="btn btn-primary disabled" aria-current="page">open project</a>
-                                    <a id="github" href="https://github.com/AprilFungo/chat-app.git" class="btn btn-primary" target="_blank"><i
-                                            class="fab fa-github"></i></a>
-                                    <a id="browse" href="https://chat-edge.herokuapp.com/" class="btn btn-primary" target="_blank"><i class="fab fa-edge"></i></a>
-                                </div>
-
-                                        </div>
-                                    </div>
-                                </div>
-                               
-                            </div>
+                <div class="title text-center my-5">
+                    <p>MY WORKS</p>
+                </div>
+            
+                <div class="card mt-5 mb-4">
+                    <div class="card-title text-center pt-4">
+                        <b>NOTES APP</b>
+                    </div>
+                    <div class="card-body text-center">
+                        <ion-icon name="bookmarks"></ion-icon>
+                        <p>NodeJs Course Activity</p>
+                        <div class="btn-group">
+                            <a href="#" class="btn btn-primary disabled" aria-current="page">open project</a>
+                            <a id="github" href="https://github.com/AprilFungo/node.jsActivity.git" class="btn btn-primary" target="_blank"><i
+                                    class="fab fa-github"></i></a>
+                            <a href="#" class="btn btn-primary disabled" target="_blank"><i class="fab fa-edge"></i></a>
                         </div>
                     </div>
                 </div>
 
-               </div>
+                    <div class="card mt-3 mb-4">
+                        <div class="card-title text-center pt-4">
+                            <b>WEATHER APP</b>
+                        </div>
+                        <div class="card-body text-center">
+                        <ion-icon name="cloudy-night"></ion-icon>
+                            <p>NodeJs Course Activity</p>
+                            <div class="btn-group">
+                                <a href="#" class="btn btn-primary disabled" aria-current="page">open project</a>
+                                <a id="github" href="https://github.com/AprilFungo/Weather-App.git" class="btn btn-primary"
+                                    target="_blank"><i class="fab fa-github"></i></a>
+                                <a href="https://weatherly-web-application.herokuapp.com/" class="btn btn-primary" target="_blank"><i class="fab fa-edge"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                <div class="card mt-3 mb-4">
+                    <div class="card-title text-center pt-4">
+                        <b>CHAT APP</b>
+                    </div>
+                    <div class="card-body text-center">
+                    <ion-icon name="chatbubbles"></ion-icon>
+                        <p>NodeJs Course Activity</p>
+                        <div class="btn-group">
+                            <a href="#" class="btn btn-primary disabled" aria-current="page">open project</a>
+                            <a id="github" href="hhttps://github.com/AprilFungo/chat-app.git" class="btn btn-primary"
+                                target="_blank"><i class="fab fa-github"></i></a>
+                            <a href="https://chat-edge.herokuapp.com/" class="btn btn-primary" target="_blank"><i class="fab fa-edge"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card mt-3 mb-4">
+                    <div class="card-title text-center pt-4">
+                        <b>LOGIN PAGE</b>
+                    </div>
+                    <div class="card-body text-center">
+                        <ion-icon name="paper"></ion-icon>
+                        <p>NodeJs Course Activity</p>
+                        <div class="btn-group">
+                            <a href="#" class="btn btn-primary disabled" aria-current="page">open project</a>
+                            <a id="github" href="https://github.com/AprilFungo/login_page.git" class="btn btn-primary"
+                                target="_blank"><i class="fab fa-github"></i></a>
+                            <a href="#" class="btn btn-primary disabled" target="_blank"><i class="fab fa-edge"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card mt-3 mb-5">
+                    <div class="card-title text-center pt-4">
+                        <b>OSCP</b>
+                    </div>
+                    <div class="card-body text-center">
+                    <ion-icon name="planet"></ion-icon>
+                        <p>NodeJs Course Activity</p>
+                        <div class="btn-group">
+                            <a href="#" class="btn btn-primary disabled" aria-current="page">open project</a>
+                            <a id="github" href="https://github.com/AprilFungo/OSCP.git" class="btn btn-primary"
+                                target="_blank"><i class="fab fa-github"></i></a>
+                            <a href="http://oscp.epizy.com/" class="btn btn-primary" target="_blank"><i class="fab fa-edge"></i></a>
+                        </div>
+                    </div>
+                </div>
+               
+                
+            </div>
+            <div class="col-md-2">
+            <!-- blank -->
             </div>
         </div>
-
-        </div>
     </div>
+
 </div>
 <!-- works card end -->
-        </div>
-    </div>
+
 </div>
-</div>
-                </div>
-            </div>
-        </div>
-    </div>
 </div>
 
 <footer id="contact" class="text-center pb-3 pt-4">
@@ -291,28 +298,28 @@
         <a id="contact" href="https://www.instagram.com/aphrilis_aperire/" target="_blank">
             <ion-icon name="logo-instagram"></ion-icon>
         </a>
-        <a id="contact" href="mailto:fungoaprilgacosta02@gmail.com"><ion-icon name="mail"></ion-icon></a>
+        <a id="contact" href="mailto:fungoaprilgacosta02@gmail.com">
+            <ion-icon name="mail"></ion-icon>
+        </a>
     </div>
     <div>
         <p>contact no. 09503583559</p>
     </div>
 </footer>
 
-</div>
-<!-- main -->
-
 <script>
-    function downloadpdf(){
+    function downloadpdf() {
         var element = document.getElementById("cv-card")
         html2pdf().from(element).save()
     }
 </script>
 
- <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"
-            integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg=="
-            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"
+    integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
 <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
