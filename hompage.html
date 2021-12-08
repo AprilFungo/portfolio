@@ -71,7 +71,7 @@
             <div>
                 <div class="btn-group mb-5">
                     <a href="#" class="btn btn-primary disabled" aria-disabled="true">CV Download</a>
-                    <a id="download" href="#" class="btn btn-secondary" onclick="downloadpdf()"><i class="fa fa-download"
+                    <a id="download" href="./img/cv.pdf" class="btn btn-secondary" download=""><i class="fa fa-download"
                             aria-hidden="true"></i></ion-icon></a>
                 </div>
             </div>
@@ -149,7 +149,7 @@
                                     <p class="text-center"><b>Personal Particulars</b></p>
                                     <p> <b>Address:</b> Sitio Pilit, Barangay Salvacion, Sta. Magdalena, Sorsogon</p>
                                     <p> <b>Date of Birth:</b> April 12, 2000</p>
-                                    <p><b>Geneder:</b> Female</p>
+                                    <p><b>Gender:</b> Female</p>
                                     <p> <b>Marital Status:</b> Single</p>
                                     <p><b>Permanent Residency:</b> Philippines</p>
                                 </div>
@@ -189,16 +189,16 @@
             <div class="col-md-8">
 
                 <div class="title text-center my-5">
-                    <p>MY WORKS</p>
+                    <p id="project__name">MY WORKS</p>
                 </div>
             
-                <div class="card mt-5 mb-4">
+                <div id="my__works" class="card mt-5 mb-4">
                     <div class="card-title text-center pt-4">
-                        <b>NOTES APP</b>
+                        <b id="project__name"> NOTES APP</b>
                     </div>
                     <div class="card-body text-center">
-                        <ion-icon name="bookmarks"></ion-icon>
-                        <p>NodeJs Course Activity</p>
+                        <ion-icon id="project__icon" name="bookmarks"></ion-icon>
+                        <p id="project__description">NodeJs Course Activity</p>
                         <div class="btn-group">
                             <a href="#" class="btn btn-primary disabled" aria-current="page">open project</a>
                             <a id="github" href="https://github.com/AprilFungo/node.jsActivity.git" class="btn btn-primary" target="_blank"><i
@@ -208,13 +208,13 @@
                     </div>
                 </div>
 
-                    <div class="card mt-3 mb-4">
+                    <div  id="my__works" class="card mt-3 mb-4">
                         <div class="card-title text-center pt-4">
-                            <b>WEATHER APP</b>
+                            <b id="project__name">WEATHER APP</b>
                         </div>
                         <div class="card-body text-center">
-                        <ion-icon name="cloudy-night"></ion-icon>
-                            <p>NodeJs Course Activity</p>
+                        <ion-icon id="project__icon" name="cloudy-night"></ion-icon>
+                            <p id="project__description">NodeJs Course Project</p>
                             <div class="btn-group">
                                 <a href="#" class="btn btn-primary disabled" aria-current="page">open project</a>
                                 <a id="github" href="https://github.com/AprilFungo/Weather-App.git" class="btn btn-primary"
@@ -224,13 +224,13 @@
                         </div>
                     </div>
 
-                <div class="card mt-3 mb-4">
+                <div  id="my__works" class="card mt-3 mb-4">
                     <div class="card-title text-center pt-4">
-                        <b>CHAT APP</b>
+                        <b id="project__name">CHAT APP</b>
                     </div>
                     <div class="card-body text-center">
-                    <ion-icon name="chatbubbles"></ion-icon>
-                        <p>NodeJs Course Activity</p>
+                    <ion-icon id="project__icon" name="chatbubbles"></ion-icon>
+                        <p id="project__description">NodeJs Course Project</p>
                         <div class="btn-group">
                             <a href="#" class="btn btn-primary disabled" aria-current="page">open project</a>
                             <a id="github" href="https://github.com/AprilFungo/chat-app.git" class="btn btn-primary"
@@ -240,13 +240,13 @@
                     </div>
                 </div>
 
-                <div class="card mt-3 mb-4">
+                <div  id="my__works" class="card mt-3 mb-4">
                     <div class="card-title text-center pt-4">
-                        <b>LOGIN PAGE</b>
+                        <b id="project__name">LOGIN PAGE</b>
                     </div>
                     <div class="card-body text-center">
-                        <ion-icon name="paper"></ion-icon>
-                        <p>NodeJs Course Activity</p>
+                        <ion-icon id="project__icon" name="paper"></ion-icon>
+                        <p id="project__description">IAS 2 Poject</p>
                         <div class="btn-group">
                             <a href="#" class="btn btn-primary disabled" aria-current="page">open project</a>
                             <a id="github" href="https://github.com/AprilFungo/login_page.git" class="btn btn-primary"
@@ -256,13 +256,13 @@
                     </div>
                 </div>
 
-                <div class="card mt-3 mb-5">
+                <div  id="my__works" class="card mt-3 mb-5">
                     <div class="card-title text-center pt-4">
-                        <b>OSCP</b>
+                        <b id="project__name">OSCP</b>
                     </div>
                     <div class="card-body text-center">
-                    <ion-icon name="planet"></ion-icon>
-                        <p>NodeJs Course Activity</p>
+                    <ion-icon id="project__icon" name="planet"></ion-icon>
+                        <p id="project__description">Capstone Project</p>
                         <div class="btn-group">
                             <a href="#" class="btn btn-primary disabled" aria-current="page">open project</a>
                             <a id="github" href="https://github.com/AprilFungo/OSCP.git" class="btn btn-primary"
@@ -307,12 +307,7 @@
     </div>
 </footer>
 
-<script>
-    function downloadpdf() {
-        var element = document.getElementById("cv-card")
-        html2pdf().from(element).save()
-    }
-</script>
+<script src="function.js"></script>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"
     integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg=="

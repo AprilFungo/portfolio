@@ -30,6 +30,9 @@ transition: 0.5s;
 #navlink:hover::after{
   width: 100%;
 }
+.navbar-toggler{
+  background-color: #ffa69e3d;
+}
 
 /* main */
 #main__container{
@@ -74,18 +77,24 @@ transition: 0.5s;
 
 /* work */
 #work{
-    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,.7)),url(./img/1-He-pbLG-OzhiX61uWofmdA-unscreen.gif);
-     background-repeat: no-repeat;
+   background-color: rgb(27, 65, 63);
 }
 .title{
     color: white;
 }
-/* #project__card{
-     background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,.7)),url(./img/1-He-pbLG-OzhiX61uWofmdA-unscreen.gif);
-     background-repeat: no-repeat;
-     background-size: cover;
-} */
-
+#my__works{
+   background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,.7)),url(./img/1-He-pbLG-OzhiX61uWofmdA-unscreen.gif);
+}
+#project__name{
+  color: aliceblue;
+}
+#project__description{
+  color:aliceblue;
+}
+#project__icon{
+  color: #ffa69e;
+  font-size: 100pt;
+}
 /* footer */
 #contact{
   background-color: black;
